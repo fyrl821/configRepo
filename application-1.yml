@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fyrl821/javaDemo
+          username: 412310808@qq.com
+          password: peilun19910928
+          # 访问git仓库cloud-demo/configRepo下的所有子目录
+          search-paths: spring-cloud-demo/configRepo/**
